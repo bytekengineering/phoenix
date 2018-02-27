@@ -9,16 +9,11 @@
 
 ## Control Acceso
 
-Material: dos tarjetas Phoenix y un sensor de ultrasonidos
+**Material**: dos tarjetas Phoenix y un sensor de ultrasonidos
 
-### Servidor (equipado con el ultrasonidos) 
-Crea una red WiFi de SSID "Phoenix + MAC" a través de la cual envía el dato de la distancia obtenido con el ultrasonidos bajo demanda.
+Una de las tarjetas, equipada con el ultrasonidos, actua de servidor y crea la red WiFi. La tarjeta cliente se conecta a esa red y hace peticiones periódicas al servidor para que le envíe el dato de la distancia. Si detecta una intrusión (un objeto demasiado cerca) la tarjeta cliente se ilumina de rojo.
 
-### Cliente
-Se conecta a la red WiFi de la otra tarjeta y pide periódicamente la distancia.
-Si se detecta una intrusión, se encienden los LEDs de rojo.
-
-[Video]
+![Control Acceso Demo](https://github.com/jimenaCabrejas/phoenix/blob/master/Ejemplos/ControlAcceso/ControlAccesoDemo.gif "Demo")
 
 ## Wiki
  - [Información de interés](https://github.com/bytekengineering/phoenix/wiki)
