@@ -1,10 +1,17 @@
 ﻿# Ejemplos
-![bytek phoenix](https://github.com/EnekoMontero/bytek/blob/gh-pages/assets/images/phoenix1.jpg "Tarjeta bytek phoenix")
 
 ## ControlAcceso
 
-Material: dos placas Phoenix y un sensor de ultrasonidos
+Material: dos tarjetas Phoenix y un sensor de ultrasonidos
 
+### Servidor (equipado con el ultrasonidos) 
+Crea una red WiFi de SSID "Phoenix + MAC" a través de la cual envía el dato de la distancia obtenido con el ultrasonidos bajo demanda.
+
+### Cliente
+Se conecta a la red WiFi de la otra tarjeta y pide periódicamente la distancia.
+Si se detecta una intrusión, se encienden los LEDs de rojo.
+
+[Video]
 
 ## Wiki
  - [Información de interés](https://github.com/bytekengineering/phoenix/wiki)
